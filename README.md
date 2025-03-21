@@ -23,9 +23,7 @@ Enter the code for admin.py and models.py
 Execute Django admin and create details for 10 books
 
 ## PROGRAM
-from django.contrib import admin
-from expapp.models import Student
-admin.site.register(Student)
+```python
 from django.db import models
 
 # Create your models here.
@@ -36,6 +34,7 @@ class Student(models.Model):
     phone=models.CharField(max_length=100)
     profile=models.ImageField(upload_to='profile/')
     address=models.TextField()
+```
 
 
 ## OUTPUT
